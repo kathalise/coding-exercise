@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: dimgrey;
+    color: white;
+}
+
+header {
+    padding: 10px;
+    margin: 20px;
+    background-color: lightgrey;
+    border: 1px dashed black;
+    height: 70px;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+}
+
+#menu-button {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}

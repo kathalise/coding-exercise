@@ -1,0 +1,37 @@
+* {
+    box-sizing: ;
+}
+
+body {
+    background-color: tomato;
+}
+
+header {
+    padding: 10px;
+    background-color: white;
+    height: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 150px;
+    float: left;
+    position: relative;
+}
+
+#menu {
+    background-color: white;
+    width: 30px;
+    float: right;
+}
+
+.container1 {
+    width: 100%;
+}
+
+.container2 {
+    width: 50px;
+}

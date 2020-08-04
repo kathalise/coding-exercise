@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: dimgrey;
+    color: white;
+}
+
+header {
+    padding: 10px;
+    margin: 20px;
+    background-color: lightgrey;
+    border: 1px dashed black;
+    height: 70px;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    float: left;
+    position: relative;
+    left: -20px;
+    top: 20px;
+}
+
+#menu {
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.container {
+    width: 80vw;
+    height: 1500px;
+    background-color: tomato;
+    border: 2px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+}
+
+h3:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+h3:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+h3:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+h3:nth-child(4) {
+    color: chartreuse;
+    bottom: 0;
+    right: 0;
+}
+
+img {
+    width: 300px;
+    top: 300px;
+    left: 200px;
+    z-index: 1;
+}
