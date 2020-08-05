@@ -1,5 +1,4 @@
 //Exercise 1:
-
 function sum() {
     var sum = 0;
     for (var x = 0; x < arguments.length; x++) {
@@ -13,15 +12,16 @@ function sum() {
 // console.log(sum(5, 10, 15, 100, 200));
 
 //Exercise 2:
-
-function waitThenRun() {
-    setTimeout(function () {
-        console.log("Hello!");
-        console.log("Goodbye!");
-    }, 1500);
+function waitThenRun(arg) {
+    setTimeout(arg, 1500);
 }
 
-waitThenRun();
+waitThenRun(function () {
+    console.log("Hello!");
+    waitThenRun(function () {
+        console.log("Goodbye!");
+    });
+});
 
 //Exercise 3:
 function myFunction(num) {
