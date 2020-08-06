@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+}
+
+body {
+    color: black;
+}
+
+header {
+    background-color: white;
+}
+
+.logo {
+    height: 30px;
+    padding: 10px;
+    float: left;
+}
+
+.hamburger {
+    height: 30px;
+    padding: 10px;
+    float: right;
+}
+
+.spices {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    filter: brightness(70%);
+}
+
+.container {
+    text-align: center;
+}
+
+.welcome-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.welcome-line {
+    color: white;
+    font-size: 35px;
+    margin: 30px;
+    margin-top: 80px;
+}
+
+.yellow-button {
+    color: orange;
+    font-size: 18px;
+    background-color: yellow;
+    border: solid 4px orange;
+    border-radius: 25px;
+    padding: 5px 50px;
+}
+
+.info-content {
+    height: 200px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.content-container {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.content-top {
+    text-align: left;
+    display: inline-block;
+}
+
+.content-bottom {
+    text-align: left;
+    display: inline-block;
+}
+
+.picto {
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.text-content-container {
+    text-align: left;
+    display: inline-block;
+    width: 400px;
+    padding: 10px;
+}
+
+/* h3 {    
+    font-size: 20px;
+    font-weight: 600;
+} */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: dimgrey;
+        color: antiquewhite;
+    }
+}
+
+@media screen and (max-width: 400px) {
+.spices {
+        width: 200%;
+    }
+
+.logo {
+        height: 25px;
+    }
+
+.welcome {
+    font-size: 30px;
+    width: 80vw;
+    margin-top: -150px;
+}
+
+p {
+    font-size: 20px;
+}
+/* section {
+        width: 100%;
+        font-size: 25px;
+        float: left;
+    }
+}
+
+.content-container {
+    display: block;
+    margin-top: 30px;
+}
+
+.content-top {
+   
+    display: block;
+}
+
+.content-bottom {
+   
+    display: block;
+    margin-top: 20px;
+}
+
+.picto{
+    width: 100px;
+    float: left;
+}
+ */
