@@ -1,0 +1,10 @@
+#general {
+    position: relative;
+}
+
+#element {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    position: absolute;
+}
