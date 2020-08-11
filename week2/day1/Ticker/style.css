@@ -16,6 +16,11 @@ body {
     top: 3px;
 }
 
-#headlines a {
+a {
     padding-right: 30px;
+    text-decoration: none;
+    text-color: blue;
+}
+a:visited {
+    color: blue;
 }
