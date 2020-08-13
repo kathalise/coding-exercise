@@ -7,13 +7,13 @@ console.log("sanity check!");
     var close = document.getElementById("x");
 
     hamburger.addEventListener("click", function () {
-        sideNav.classList.remove("on");
+        sideNav.classList.remove("goAway");
         sideNav.style.visibility = "visible";
         overlay.style.visibility = "visible";
     });
 
     close.addEventListener("click", function () {
-        sideNav.classList.add("on");
+        sideNav.classList.add("goAway");
         sideNav.style.visibility = "hidden";
         overlay.style.visibility = "hidden";
     });

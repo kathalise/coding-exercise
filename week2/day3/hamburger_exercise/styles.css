@@ -116,7 +116,7 @@ p {
     background-color: black;
     opacity: 50%;
     visibility: hidden;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .side-nav {
@@ -161,10 +161,9 @@ a:visited {
     margin-top: 20px;
 }
 
-.on {
-    transition-property: transform;
-    transition-duration: 1s;
-    transform: translateX(200%);
+.goAway {
+    right: -30%;
+    transition: 1s;
 }
 
 footer {
@@ -223,11 +222,20 @@ footer {
     .side-nav {
         width: 50%;
     }
+
+    .goAway {
+        right: -50%;
+        transition: 1s;
+    }
 }
 
 */ @media (prefers-color-scheme: dark) {
     body {
         background-color: dimgrey;
         color: antiquewhite;
+    }
+
+    .side-nav {
+        color: grey;
     }
 }
