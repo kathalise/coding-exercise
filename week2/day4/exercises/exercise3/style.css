@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: orange;
+}
+
+main {
+    min-height: 100vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 30px;
+    background-color: pink;
+}
+
+img {
+    height: 15%;
+    width: 15%;
+    align-self: center;
+}
