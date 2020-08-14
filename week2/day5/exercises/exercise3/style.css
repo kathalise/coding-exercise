@@ -1,0 +1,74 @@
+* {
+}
+
+body {
+    height: 201px;
+    display: flex;
+}
+
+.bigbox-grey {
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    display: grid;
+    margin-right: 5px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+.bigbox-black {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    display: grid;
+    margin-right: 5px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+.bigbox-blue {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    display: grid;
+    margin-right: 5px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+.bigbox-purple {
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    display: grid;
+    margin-right: 5px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.smallbox-orange {
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    grid-column: 2 / 3;
+}
+
+.smallbox-yellow {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.smallbox-green {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.smallbox-pink {
+    background-color: pink;
+    height: 100px;
+    width: 100px;
+    grid-column: 1 / 2;
+}
