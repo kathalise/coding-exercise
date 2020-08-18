@@ -1,0 +1,11 @@
+.results-container {
+    border: gray 1px solid;
+}
+
+p {
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: yellow;
+}
