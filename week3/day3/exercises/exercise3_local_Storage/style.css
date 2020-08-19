@@ -1,0 +1,16 @@
+* {
+    background-color: gainsboro;
+}
+
+#container {
+    height: 140px;
+    width: 507px;
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea {
+    height: 100px;
+    width: 500px;
+    background-color: white;
+}

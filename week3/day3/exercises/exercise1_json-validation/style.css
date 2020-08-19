@@ -1,0 +1,23 @@
+* {
+    background-color: tomato;
+}
+
+#container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea {
+    height: 100px;
+    width: 500px;
+    background-color: white;
+}
+
+#button {
+    margin-top: 10px;
+    background-color: ivory;
+    height: 20px;
+    width: 500px;
+}
