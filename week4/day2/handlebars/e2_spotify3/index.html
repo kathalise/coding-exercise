@@ -22,7 +22,7 @@
                 {{#each items}}
 
                 <div class='myCard'>
-                <img class="picture-music" src="{{images.0.url}}" alt="picture" />
+                <img class="picture-music" src="{{images.0.url}}" onerror="src='https://www.scottishculture.org/themes/scottishculture/images/music_placeholder.png';">
                 <a href="{{external_urls.spotify}}">{{name}}</a>
                 </div>
                 {{/each}}
