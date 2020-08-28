@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Spotify Project Handlebars</title>
+    </head>
+    <body>
+       
+            <div class="container">
+                <h1>Music Search</h1>
+                <input class="search" type="text" name="search" placeholder="Try me" />
+                <select class="artist-or-album" name="" id="">
+                    <option value="artist">Artist</option>
+                    <option value="album">Album</option>
+                </select>
+                <button class="submit-button">Let's go</button>
+                <div class="results-for"></div>
+                <div class="results-container"></div> 
+                <script id="template" type="text/x-handlebars-template">
+                {{#each items}}
+
+                <div class='myCard'>
+                <img class="picture-music" src="{{images.0.url}}" alt="picture" />
+                <a href="{{external_urls.spotify}}">{{name}}</a>
+                </div>
+                {{/each}}
+                </script>
+                <button class="more">More Results</button>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
