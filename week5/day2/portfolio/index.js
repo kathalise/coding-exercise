@@ -29,7 +29,7 @@ http.createServer((req, res) => {
 
     console.log("time to serve some file!");
 
-    // --- Opening the "landing page" for portfolio --- //
+    // --- Opening the "landing page" of portfolio (main) --- //
     if (req.url === "/") {
         res.setHeader("content-type", "text/html");
         res.end(myFunction.myFunction());
@@ -65,7 +65,6 @@ http.createServer((req, res) => {
                 const readStreamHtml = fs.createReadStream(
                     filePath + "/index.html"
                 );
-                // console.log("(0) This is the readStremHtml: ", readStreamHtml);
                 readStreamHtml.pipe(res);
                 readStreamHtml.on("error", (err) => {
                     console.log("err in readstream : ", err);
@@ -80,8 +79,4 @@ http.createServer((req, res) => {
             }
         }
     });
-
-    /// ------ to make sure nobody hacks our files ------ ///
-    // console.log("/user/.../.../text.txt");
-    // console.log("normalized path", path.normalize("/user/.../.../text.txt"));
 }).listen(8080, () => console.log("My portfolio is up and running"));

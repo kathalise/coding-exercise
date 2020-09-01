@@ -5,8 +5,8 @@ module.exports.myFunction = () => {
     console.log("(FILE FUN) content: ", content);
 
     var listOfProjects = "";
-    for (let i = 0; i < content.length; i++) {
-        listOfProjects += `<li><a href="${content[i]}/">${content[i]}</a></li>`;
+    for (var prop in content) {
+        listOfProjects += `<li><a href="${content[prop]}/">${content[prop]}</a></li>`;
     }
     let htmlFun = `
             <!doctype html>
