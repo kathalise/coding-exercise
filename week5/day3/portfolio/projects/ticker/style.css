@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+}
+
+#ticker {
+    position: relative;
+    border-bottom: 2px solid hotpink;
+    height: 1.5em;
+    overflow: hidden;
+}
+
+#headlines {
+    position: absolute;
+    left: 100%;
+    white-space: nowrap;
+    top: 3px;
+}
+
+a {
+    padding-right: 30px;
+    text-decoration: none;
+    color: blue;
+}
+a:visited {
+    color: blue;
+}
