@@ -1,0 +1,10 @@
+<h1>Welcome to my portfolio!</h1>
+<div class="container">
+{{#each projects}}
+
+    <div class ="card">
+    <a href="{{directory}}"><img src="/{{directory}}/screenshot.png" class="screenshots"></a>
+    <p>{{title}}</p>
+    </div>
+{{/each}}
+</div>

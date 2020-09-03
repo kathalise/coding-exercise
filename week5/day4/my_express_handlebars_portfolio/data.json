@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Kathi's Kitty Carousel",
+        "directory": "kitty_carousel"
+    },
+    {
+        "title": "Connect 4",
+        "directory": "connect_four_game"
+    },
+    {
+        "title": "Panes",
+        "directory": "panes"
+    },
+    {
+        "title": "The Ticker",
+        "directory": "ticker"
+    },
+    {
+        "title": "Spotify Search",
+        "directory": "spotify"
+    }
+]

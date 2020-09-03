@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+}
+
+.container {
+    position: relative;
+    border: 5px solid hotpink;
+    height: 410px;
+    width: 610px;
+}
+
+#top-image,
+#bottom-image {
+    position: absolute;
+    overflow: hidden;
+}
+
+#top-image {
+    width: 300px;
+}
+
+#bar {
+    position: absolute;
+    height: 400px;
+    width: 12px;
+    background-color: hotpink;
+    left: 295px;
+}
