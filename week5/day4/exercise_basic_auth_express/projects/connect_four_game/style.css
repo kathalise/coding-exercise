@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+.myheadline {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: baseline;
+    animation-name: drop;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-800px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    color: rgb(58, 46, 121);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-decoration-line: line-through;
+}
+
+.game-container {
+    margin-top: 30px;
+}
+#board {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border: 10px rgb(58, 46, 121) solid;
+    overflow: hidden;
+}
+
+.row0,
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    border: rgb(58, 46, 121) 3px solid;
+    z-index: 5;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    border: rgb(58, 46, 121) 3px solid;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hole {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transform: translate(-30px, -30px);
+    cursor: pointer;
+}
+
+.player1 {
+    background-color: rgb(221, 221, 75);
+    border: rgb(58, 46, 121) 3px solid;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.player2 {
+    background-color: rgb(235, 75, 75);
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-600px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.victory-popup-overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(254, 254, 254, 0.85);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 100;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 8s;
+    transition-duration: 6s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.85;
+    }
+}
+
+.victory-popup {
+    border: solid 5px rgb(53, 14, 245);
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 350px;
+    width: 350px;
+    z-index: 200;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+}
+
+.victory-popup p {
+    font-size: 25px;
+    /* margin-top: 40px; */
+    margin-bottom: 30px;
+    color: rgb(53, 14, 245);
+    align-self: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+    position: relative;
+    opacity: 1;
+}
+
+button {
+    border: 1px blue solid;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20%;
+    align-self: center;
+    transition: background-color 0.5s, color 0.5s;
+}
+button:hover {
+    background-color: rgb(53, 14, 245);
+    color: white;
+    cursor: pointer;
+    transition: background-color color 1s;
+}
+
+.winPlayer1 {
+    visibility: hidden;
+    display: inline-block;
+    top: 80px;
+    z-index: 1;
+}
+
+.winPlayer2 {
+    visibility: hidden;
+    display: inline-block;
+    top: -10px;
+    z-index: 2;
+}
+.nextPlayer {
+    height: 50px;
+    width: 100vw;
+    top: 130px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nextPlayer p {
+    position: absolute;
+    color: rgb(58, 46, 121);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.turnYellow {
+    visibility: hidden;
+}
+
+.turnRed {
+    visibility: hidden;
+}
