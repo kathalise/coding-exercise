@@ -1,0 +1,18 @@
+<div class="navigation">
+{{>projects}}
+</div>
+
+<div class="project-detail">
+<h1>{{selectedProject.title}}</h1>
+<a href="/{{selectedProject.directory}}"><img src="/{{selectedProject.directory}}/screenshot.png" class="screenshots-big"></a>
+<p>{{selectedProject.description}}</p>
+<div class="buttons">
+<div class="back-button">
+<a href="../{{directory}}">◂ Back to Grid</a>
+</div>
+<div class="next-button">
+<a href="/{{nextProject}}">Next Project ▸</a>
+</div>
+</div>
+</div>
+

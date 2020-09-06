@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: blue;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+}
+
+.navigation p:hover {
+    text-decoration: underline;
+}
+
+.navigation p {
+    color: white;
+    font-size: 15px;
+}
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 250px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-frame {
+    border: 2px blue solid;
+    height: 200px;
+}
+.screenshots {
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    justify-self: left;
+    filter: grayscale(100%);
+}
+
+.screenshots:hover {
+    filter: grayscale(0%);
+    transition: all 0.6s;
+}
+.screenshots-big {
+    height: 250px;
+    margin-top: 20px;
+    filter: grayscale(0%);
+}
+
+p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back-button {
+    margin-top: 20px;
+}
+.next-button {
+    margin-top: 0;
+    align-self: flex-end;
+}
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    align-self: center;
+}
+
+.footer {
+    height: 20px;
+    margin-top: 30px;
+    color: grey;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 11px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-flow: wrap;
+        display: none;
+    }
+
+    .navigation p {
+        font-size: 18px;
+        align-self: center;
+        margin: 10px 15px;
+        display: none;
+    }
+
+    .project-detail {
+        width: 80%;
+        overflow: hidden;
+    }
+
+    .screenshots {
+        height: 200px;
+        width: 280px;
+    }
+
+    .big {
+        height: 200px;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .navigation p {
+        color: white;
+        font-size: 10px;
+    }
+
+    .project-detail {
+        width: 300px;
+    }
+
+    .screenshots {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .big {
+        width: 300px;
+        height: auto;
+        margin-top: 10px;
+    }
+}

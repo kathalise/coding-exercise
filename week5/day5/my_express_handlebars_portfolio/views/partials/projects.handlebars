@@ -1,0 +1,17 @@
+{{#projectList}}
+{{#if ../grid}}
+    <div class ="card">
+        <div class="image-frame">
+    <a href="description/{{directory}}"><img src="/{{directory}}/screenshot.png" class="screenshots">
+    </div>
+    <p>{{title}}</p>
+    </a>
+    </div>
+    {{else}}
+    <a href="/description/{{directory}}">
+    <p>{{title}}
+        </p>
+        </a>
+    
+    {{/if}}
+{{/projectList}}
