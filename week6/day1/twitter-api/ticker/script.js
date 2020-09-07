@@ -1,7 +1,10 @@
 console.log("sanity check!");
+console.log("Do you copy?xxxx");
 
 (function () {
     var headlines = $("#headlines");
+    var reqId;
+    var left = headlines.offset().left;
     var links = $("a");
 
     $.ajax({
@@ -11,14 +14,16 @@ console.log("sanity check!");
         success: function (response) {
             console.log("json!!!!", response);
             move();
+
             var myNews = [];
             for (var i = 0; i < response.length; i++) {
-                myNews +=
+                var addToMyNews =
                     "<a href='" +
                     response[i].href +
                     "'>" +
                     response[i].text +
                     "</a>";
+                myNews.push(addToMyNews);
             }
 
             headlines.html(myNews);
@@ -31,8 +36,6 @@ console.log("sanity check!");
         },
     });
 
-    var left = headlines.offset().left;
-    var reqId;
     function move() {
         left--;
         if (left <= -links.eq(0).outerWidth()) {
@@ -43,21 +46,20 @@ console.log("sanity check!");
             left: left,
         });
 
-        reqID = requestAnimationFrame(move);
+        reqId = requestAnimationFrame(move);
     }
-    for (var i = 0; i < links.length; i++) {
-        links.on("mouseover", function (event) {
-            console.log("mouseover");
+    $(document).on("mouseover", "a", function (event) {
+        console.log("mouseover is happening?");
 
-            $(event.target).css({
-                color: "hotpink",
-                "text-decoration": "underline",
-            });
-            cancelAnimationFrame(reqID);
+        $(event.target).css({
+            color: "hotpink",
+            "text-decoration": "underline",
         });
-    }
+        cancelAnimationFrame(reqId);
+    });
+
     ///Neither Event listeners are working ??? ////
-    links.on("mouseleave", function (event) {
+    $(document).on("mouseleave", "a", function (event) {
         console.log("sanity check Mouseleave");
         $(event.target).css({
             color: "blue",
